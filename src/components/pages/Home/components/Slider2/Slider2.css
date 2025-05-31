@@ -1,0 +1,13 @@
+.Slider2 > div{
+    background-color: #727171cc;
+    height: 50vh;
+    padding: 30px;
+}
+.Slider2 .div_img{
+    width: 100%;
+    height: 200px;
+}
+.Slider2  .div_img img{
+    width: 100%;
+    height: 100%;
+}

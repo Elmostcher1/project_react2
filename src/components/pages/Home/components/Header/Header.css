@@ -1,0 +1,97 @@
+Header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header .slider_slick  .slider-item{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header .slider_slick  .men{
+    background: linear-gradient(to top , rgba(0,0,0,0.5) ,rgba(0,0,0,0.3)) , url(../../../../../assets/images/carousel-1-B1coVWNc.jpg);
+    height: 50vh;
+    background-size: cover;
+
+}
+.Header .slider_slick  .women{
+    background: linear-gradient(to top , rgba(0,0,0,0.5) ,rgba(0,0,0,0.3)) , url(../../../../../assets/images/carousel-2--2x9VnkY.jpg);
+    height: 50vh;
+    background-size: cover;
+
+}
+.Header .slider_slick  .kids{
+    background: linear-gradient(to top , rgba(0,0,0,0.5) ,rgba(0,0,0,0.3)) , url(../../../../../assets/images/carousel-3-CkLdEAwA.jpg);
+    height: 50vh;
+    background-size: cover;
+
+}
+.Header .slider_slick .slider-item  div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 70%;
+    margin: auto;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.Header .offer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 60vh;
+}
+
+.Header .offer > div{
+    height: calc((100% - 30px) / 2);
+    font-size: 20px;
+}
+.Header .offer > div:nth-of-type(1){
+    background: url(../../../../../assets/images/offer-1-DP1lQ_lP.jpg) center no-repeat;
+    background-size : cover ;
+    color : #fff ;
+}
+.Header .offer > div:nth-of-type(2){
+    background: url(../../../../../assets/images/offer-2-Cly2vTNH.jpg) center no-repeat;
+    background-size : cover ;
+    color : #fff ;
+}
+.btn_shop{
+    border: 1px solid var(--white-color);
+    padding: 8px 12px;
+    background-color: transparent;
+    color: var(--white-color);
+     font-size: 20px;
+   transition: 0.5s;
+
+ }
+.btn_shop:hover{
+    background-color: var(--main-color);
+    color: blue !important;
+  border-radius: 10px;
+}
+/* second---------------- */
+.Header .div_card{
+    background-color: #ffff ; 
+    padding: 18px 16px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.Header .div_card span{
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+@media (max-width : 1000px ) {
+    .Header .div_card{
+        margin-bottom: 20px;
+    }
+    .Header .slider_slick{
+        margin-bottom: 30px;
+    }
+}
+/* second---------------- */

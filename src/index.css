@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+ font-family: 'tajwal-bold';
+ src: url(./assets/fonts/Tajawal/Tajawal-Bold.ttf) format('woff2');
+}
+@font-face {
+ font-family: 'tajwal-light';
+ src: url(./assets/fonts/Tajawal/Tajawal-ExtraLight.ttf) format('woff2');
+}
+@font-face {
+ font-family: 'tajwal-regular';
+ src: url(./assets/fonts/Tajawal/Tajawal-Regular.ttf) format('woff2');
+}
+
+:root{
+    --tjawl-bold : 'tajwal-bold' , sans-serif;
+    --tjawl-light : 'tajwal-light' , sans-serif;
+    --tjawl-Regular : 'tajwal-regular' , sans-serif;
+    --main-color : #cece2b;
+    --second-color: #3d464d ;
+    --dark-color : #0000 ;
+    --white-color : #ccc ;
+}
+.dark{
+    --white-color : #000 ;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    font-family: var(--tjawl-Regular);
+    background-color: var(--white-color) !important;
+    transition: 0.9s;
+}
+.sec_con{
+    margin-top: 100px;
+}
+.sec_con  .title_sec{
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 500 ;
+    font-size: 35px ;
+   text-transform: uppercase;
+ }
+.stars{
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+/* -- products CSS */
+.Products .product{
+    height: max-content;
+    background-color: #fff !important;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+   transition: 0.5s;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.Products .product > div:nth-of-type(1){
+    width: 100% ;
+    height: 250px;
+    padding: 25px;
+    
+}
+
+.Products .product > div:nth-of-type(1) img{
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+}
+
+.Products .product > div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Products .product > div:nth-of-type(2) p{
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+}
+.Products .product > div:nth-of-type(2) > div{
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    
+}
+.Products .product > div:nth-of-type(2) > div button , .btn_top{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+    border:1px solid var(--main-color);
+}
+.Products .product > div:nth-of-type(2) > div button:hover{
+    background-color: transparent;
+    color: var(--main-color);
+    transform: scale(1.2);
+
+}
+
+.Products .product:hover div:nth-of-type(1) img{
+    transform: scale(1.2);
+    
+}
+.Products .product:hover{
+   box-shadow: var(--main-color) 0px 3px 8px;
+}
+.amount_cart{
+    font-style: italic;
+    color: #000 !important;
+}
+/* -- products CSS */
+.btn_top{
+    transition: 0.5s;
+    font-size: 23px;
+    padding-top: 3px;
+}
+.btn_top:hover{
+background-color: transparent;
+border: 1px solid var(--main-color);
+color: var(--main-color);
+}
